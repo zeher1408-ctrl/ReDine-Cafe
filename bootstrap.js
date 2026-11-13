@@ -1,0 +1,1 @@
+(()=>{try{const products=JSON.parse(localStorage.getItem('redineProducts')||'null');if(Array.isArray(products)&&products.length===0)localStorage.removeItem('redineProducts')}catch{localStorage.removeItem('redineProducts')}})();
