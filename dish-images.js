@@ -1,0 +1,1 @@
+(()=>{let p=JSON.parse(localStorage.getItem('redineProducts')||'[]');if(!p.length)return;p=p.map(x=>({...x,image:`https://source.unsplash.com/600x400/?${encodeURIComponent(x.name+' food')}`}));localStorage.setItem('redineProducts',JSON.stringify(p))})();
